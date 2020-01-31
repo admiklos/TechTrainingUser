@@ -41,8 +41,7 @@ public class MainController {
 	
 	@CrossOrigin
 	@PostMapping("/user")
-//	public void saveUser (@RequestBody TechUser techUser) {
-    public void saveUser (TechUser techUser) {
+	public void saveUser (@RequestBody TechUser techUser) {
 		techUserServiceImpl.saveUser(techUser);
 	}
 	
@@ -54,8 +53,7 @@ public class MainController {
 	
 	@CrossOrigin
 	@PutMapping("/user/{id}")
-//	public void updateUser(@PathVariable Long id, @RequestBody TechUser techUser) {
-	public void updateUser(@PathVariable Long id, TechUser techUser) {
+	public void updateUser(@PathVariable Long id, @RequestBody TechUser techUser) {
 		techUserServiceImpl.updateUser(id, techUser);
 	}
 
