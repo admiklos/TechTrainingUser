@@ -41,6 +41,8 @@ public class TechUserServiceImpl implements TechUserServiceInt {
 		updatedUser.setSelectedCategory(techUser.getSelectedLanguage());
 		updatedUser.setSelectedLanguage(techUser.getSelectedLanguage());
 		updatedUser.setUsername(techUser.getUsername());
+		updatedUser.setGender(techUser.getGender());
+		updatedUser.setExperienceLevel(techUser.getExperienceLevel());
 		techUserRepository.save(updatedUser);
 	}
 
