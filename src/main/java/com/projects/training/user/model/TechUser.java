@@ -15,7 +15,7 @@ public class TechUser {
 	private Long id;
 	
 	private String username;
-	private String gender;
+	
 	private String experienceLevel;
 	
 	private String[] languages;
@@ -26,11 +26,10 @@ public class TechUser {
 	
 	public TechUser() {}
 
-	public TechUser(Long id, String username, String gender, String experienceLevel, String[] languages,
+	public TechUser(Long id, String username, String experienceLevel, String[] languages,
 			String selectedLanguage, String selectedCategory) {
 		this.id = id;
 		this.username = username;
-		this.gender = gender;
 		this.experienceLevel = experienceLevel;
 		this.languages = languages;
 		this.selectedLanguage = selectedLanguage;
@@ -43,14 +42,6 @@ public class TechUser {
 
 	public void setUsername(String username) {
 		this.username = username;
-	}
-
-	public String getGender() {
-		return gender;
-	}
-
-	public void setGender(String gender) {
-		this.gender = gender;
 	}
 
 	public String getExperienceLevel() {
@@ -91,7 +82,7 @@ public class TechUser {
 
 	@Override
 	public String toString() {
-		return "TechUser [id=" + id + ", username=" + username + ", gender=" + gender + ", experienceLevel="
+		return "TechUser [id=" + id + ", username=" + username + ", experienceLevel="
 				+ experienceLevel + ", languages=" + Arrays.toString(languages) + ", selectedLanguage="
 				+ selectedLanguage + ", selectedCategory=" + selectedCategory + "]";
 	}
